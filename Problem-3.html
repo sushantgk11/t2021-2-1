@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problem-3</title>
+  </head>
+  <body>
+    <script>
+      var a = Number(prompt("Enter the value of a : "));
+
+      for (let i = 0; i <= a; i++) {
+        let arr_one = [];
+        let arr_two = [];
+        for (let j = 1; j <= i; j++) {
+          arr_one.push(j);
+          arr_two.push(j);
+        }
+        arr_two.reverse();
+        if (i % 2 == 0) {
+          document.write(arr_two + "<br>");
+        } else {
+          document.write(arr_one + "<br>");
+        }
+      }
+
+      for (let i = a - 1; i >= 0; i--) {
+        let arr_one = [];
+        let arr_two = [];
+        for (let j = 1; j <= i; j++) {
+          arr_one.push(j);
+          arr_two.push(j);
+        }
+        arr_two.reverse();
+        if (i % 2 == 0) {
+          document.write(arr_two + "<br>");
+        } else {
+          document.write(arr_one + "<br>");
+        }
+      }
+    </script>
+  </body>
+</html>

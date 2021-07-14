@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problem-1</title>
+  </head>
+  <body>
+    <script>
+      var a = Number(prompt("Enter the first value : "));
+      var b = Number(prompt("Enter the second value : "));
+      var sum;
+      var sub;
+      var mul;
+      var div;
+
+      var operation = prompt(
+        "Enter the operation type (Eg: '+', '-', '*', '/' "
+      );
+
+      document.write("The first value : " + a);
+      document.write("<br>The second value : " + b);
+
+      switch (operation) {
+        case "+":
+          sum = a + b;
+          document.write("<br>The Addition of two number : " + sum);
+          break;
+        case "-":
+          sub = a - b;
+          document.write("<br>The substraction of two number : " + sub);
+          break;
+        case "*":
+          mul = a * b;
+          document.write("<br>The Multiplication of two number : " + mul);
+          break;
+        case "/":
+          div = a / b;
+          document.write("<br>The Division of two number : " + div);
+          break;
+      }
+    </script>
+  </body>
+</html>
